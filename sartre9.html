@@ -117,7 +117,7 @@
             </tr>
             <tr>
                 <th>Ciencias</th>
-                <td><input type="number" name="adCie" id="adCie"></td>
+                <td></td>
                 <td><input type="number" name="ap1Cie" id="ap1Cie"></td>
                 <td><input type="number" name="ap2Cie" id="ap2Cie"></td>
                 <td><input type="number" name="ap3Cie" id="ap3Cie"></td>
@@ -243,8 +243,6 @@
             var inpFolhaAzGeo = document.getElementById('folhaAzGeo')
             var folhaAzGeo = Number(inpFolhaAzGeo.value)
 
-            var inpAdCie = document.getElementById('adCie')
-            var adCie = Number(inpAdCie.value)
             var inpAp1Cie = document.getElementById('ap1Cie')
             var ap1Cie = Number(inpAp1Cie.value)
             var inpAp2Cie = document.getElementById('ap2Cie')
@@ -337,8 +335,6 @@
                 inpFolhaAzGeo = document.getElementById('folhaAzGeo')
                 folhaAzGeo = Number(inpFolhaAzGeo.value)
 
-                inpAdCie = document.getElementById('adCie')
-                adCie = Number(inpAdCie.value)
                 inpAp1Cie = document.getElementById('ap1Cie')
                 ap1Cie = Number(inpAp1Cie.value)
                 inpAp2Cie = document.getElementById('ap2Cie')
@@ -366,15 +362,15 @@
                 var notaMat = ((adMat * 5) + (((ap1Mat + ap2Mat + ap3Mat) / 1.2) * 3) + (avEnemMat * 1) + (folhaAzMat*1)) / 10
                 var notaHist = ((adHist * 5) + (((ap1Hist + ap2Hist + ap3Hist) / 1.2) * 3) + (avEnemHist * 1) + (folhaAzHist*1)) / 10
                 var notaGeo = ((adGeo * 5) + (((ap1Geo + ap2Geo + ap3Geo) / 1.2) * 3) + (avEnemGeo * 1) + (folhaAzGeo*1)) / 10
-                var notaCie = (((adBio + adFis + adQui) / 3 * 5) + (((ap1Mat + ap2Mat + ap3Mat) / 1.2) * 3) + (avEnemMat * 1) + (folhaAzMat*1)) / 10
+                var notaCie = (((adBio + adFis + adQui) / 3 * 5) + (((ap1Cie + ap2Cie + ap3Cie) / 1.2) * 3) + (avEnemCie * 1) + (folhaAzCie*1)) / 10
 
                 inpNotaArtes.innerText = notaArtes
                 inpNotaRed.innerText = notaRed
                 inpNotaPort.innerText = notaPort
-                inpNotaMat.innterText = notaMat
+                inpNotaMat.innerText = notaMat
                 inpNotaHist.innerText = notaHist
                 inpNotaGeo.innerText = notaGeo
-                inpNotaCie.innterText = notaCie
+                inpNotaCie.innerText = notaCie
             }
         </script>
 </body>
