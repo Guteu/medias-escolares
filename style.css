@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
 :root {
-    --cor-link: black;
+    --cor-link: #0000EE;
+}
+
+body {
+    background-color: rgb(188, 188, 188);
 }
 
 a, a:visited {
