@@ -8,13 +8,30 @@ body {
     background-color: rgb(188, 188, 188);
 }
 
+section {
+    margin-bottom: 15px;
+}
+
 a, a:visited {
     text-decoration: none;
     color: var(--cor-link);
 }
 
+button {
+    font-size: 25px;
+}
+
 h1 {
     text-align: center;
+}
+
+.caixaContato {
+    text-align: left;
+    display: inline-block;
+    background-color: gainsboro;
+    padding: 5px;
+    border-radius: 10px;
+    border: 3px solid black;
 }
 
 .caixaEscolhas {
@@ -33,4 +50,8 @@ div.caixaEscolhas a {
     padding: 3px;
     border-radius: 5px;
     border: 3px solid black;
+}
+
+.tabelaResponsiva {
+    overflow-x: auto;
 }
